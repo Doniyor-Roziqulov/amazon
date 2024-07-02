@@ -1,0 +1,188 @@
+.header-start {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-span {
+    display: block;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.header-small {
+    color: #fff;
+    font-size: 14px;
+}
+
+.header-link {
+    text-decoration-line: none;
+    display: none;
+}
+
+.header-logo {
+    width: 120px;
+    height: 80px;
+}
+
+.one-link {
+    padding-left: 16px;
+    position: relative;
+}
+
+.one-link::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../../images/geo-alt.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+}
+
+.select-box {
+    width: 400px;
+    display: flex;
+    display: none;
+    justify-content: center;
+    padding-right: 45px;
+    position: relative;
+}
+
+.select-box::after {
+    content: "";
+    width: 45px;
+    height: 35.4px;
+    background-image: url(../../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #febd69;
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.header-select {
+    width: 50px;
+    height: 35px;
+    border: none;
+    background-color: #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header-select option {
+    font-size: 14px;
+}
+
+.header-input {
+    width: 100%;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.header-flag {
+    padding-left: 24px;
+    position: relative;
+}
+
+.flag {
+    width: 42px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.header-flag::before {
+    content: "";
+    width: 21px;
+    height: 16px;
+    background-image: url(../../images/flag-Stars-and-Stripes-July-4-1818.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+}
+
+.header-end {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: none;
+}
+
+.header-endbox {
+    display: flex;
+    align-items: center;
+}
+
+.header-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    padding: 8px 9px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header-end {
+    background-color: #232f3e;
+}
+
+.list-link {
+    display: block;
+    text-decoration-line: none;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    padding: 8px 9px;
+    color: #fff;
+}
+
+@media only screen and (min-width: 560px) {
+    .header-end {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    .select-box {
+        display: flex;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .select-box {
+        width: 700px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .select-box {
+        width: 826px;
+    }
+}
+
+@media only screen and (min-width: 1390px) {
+    .header-link {
+        display: block;
+    }
+}
