@@ -614,26 +614,33 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
   z-index: 9;
   position: absolute;
+  left: 10px;
   top: 310px;
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
 }
 
+.hero {
+  background-color: #cdc3f6;
+}
+
 .list-car li {
   background-color: #fff;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-bottom: 15px;
 }
 
@@ -647,4 +654,14 @@ img {
   color: #007185;
   text-decoration-line: none;
   margin-top: 10px;
+}
+
+@media only screen and (min-width: 400px) {
+  .list-car li {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
